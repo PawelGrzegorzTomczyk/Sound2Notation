@@ -84,24 +84,9 @@ private const val BASE_URL = "http://<your_server_ip>:<port>/"
 ### 3. Build the App
 Open the project in Android Studio and build as usual.
 
-✔️ The repository includes:
-
-Kotlin source files & Composables
-
-build.gradle, settings.gradle, etc.
-
-No build/, test/, or androidTest/ directories
-
-Clean structure, focused on what's essential for development
-
-📁 File Structure Overview (Client Repo)
-📁 app/
- ┣ 📁 src/
- ┃ ┣ 📁 main/
- ┃ ┃ ┣ 📁 java/          → Kotlin source files
- ┃ ┃ ┣ 📁 res/           → UI resources
- ┃ ┃ ┗ AndroidManifest.xml
- ┣ build.gradle
- ┣ settings.gradle
- ┗ README.md             ← You're here!
+## ✔️ The repository includes:
+-Kotlin source files & Composables
+-build.gradle, settings.gradle, etc.
+-No build/, test/, or androidTest/ directories
+-Clean structure, focused on what's essential for development
 
