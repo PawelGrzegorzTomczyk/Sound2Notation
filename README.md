@@ -79,7 +79,9 @@ Update `NetworkModule.kt` to match your backend address:
 
 ```kotlin
 private const val BASE_URL = "http://<your_server_ip>:<port>/"
-3. Build the App
+```
+
+### 3. Build the App
 Open the project in Android Studio and build as usual.
 
 ✔️ The repository includes:
