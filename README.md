@@ -91,4 +91,4 @@ Open the project in Android Studio and build as usual.
 - Clean structure, focused on what's essential for development
 
 ### 4. License
-## Use it as you like, u can credit my somewhere by name(Paweł Grzegorz Tomczyk), and send my your version(adrestomaczyka@gmail.com), but i'm not to attached to this. Feel free to ask me anything, im open to talk.
+# Use it as you like, u can credit me somewhere by name(Paweł Grzegorz Tomczyk), and send my your version(adrestomaczyka@gmail.com), but i'm not to attached to this. Feel free to ask me anything, im open to talk.
