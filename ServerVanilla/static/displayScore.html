@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twoje Nuty</title>
+    <script src="osmd.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #osmdCanvas {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="osmdCanvas"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay("osmdCanvas");
+
+            // Funkcja do pobierania parametru z URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const scoreUrl = getQueryParam('scoreUrl');
+
+            if (scoreUrl) {
+                osmd.load(scoreUrl).then(
+                    function () {
+                        osmd.render();
+                        // Opcjonalnie: dostosuj rozmiar przy zmianie okna
+                        window.addEventListener("resize", function () {
+                            osmd.render();
+                        });
+                    }
+                ).catch(function (err) {
+                    console.error("Błąd ładowania nut:", err);
+                    document.getElementById("osmdCanvas").innerText = "Nie udało się załadować nut.";
+                });
+            } else {
+                document.getElementById("osmdCanvas").innerText = "Brak adresu URL nut do wyświetlenia.";
+            }
+        });
+    </script>
+</body>
+
+</html>
